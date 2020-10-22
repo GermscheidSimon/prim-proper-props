@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import GuestForm from '../GuestForm/GuestForm'
 import GuestList from '../GuestList/GuestList'
 import DinnerSupplies from '../DinnerSupplies/DinnerSupplies'
@@ -55,10 +56,7 @@ class App extends Component {
         />
          <GuestList guests={this.state.guestList}/>
          <DinnerSupplies count={this.state.guestList.length} />
-        <footer>
-          <h3>Have fun!</h3>
-          <p>Don't forget to mind your Ps and Qs!</p>
-        </footer>
+          <Footer />
       </div>
     );
   }
